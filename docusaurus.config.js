@@ -128,6 +128,18 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+       ({
+        hashed: true,
+        indexDocs: true,
+        indexPages:true,
+        docsRouteBasePath: '/docs/',
+      }),
+    ],
+  ]
 };
 
 module.exports = config;
